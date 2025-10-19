@@ -6,7 +6,7 @@
 - [x] 쉼표(,)로 구분된 문자열의 합 계산
 - [x] 콜론(:)으로 구분된 문자열의 합 계산
 - [x] 커스텀 구분자 지정 기능 (`//;\n1;2;3` → 6)
-- [ ] 잘못된 입력 시 IllegalArgumentException 발생
+- [x] 잘못된 입력 시 IllegalArgumentException 발생
 - [x] 결과를 "결과 : n" 형태로 출력
 
 

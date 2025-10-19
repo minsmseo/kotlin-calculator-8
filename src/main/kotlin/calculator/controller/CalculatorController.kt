@@ -23,7 +23,14 @@ class CalculatorController(
             .map { it.trim() }
             .filter { it.isNotEmpty() }
         for(tok in tokens){
-            nums.add(tok.toInt())
+            val num = tok.toIntOrNull()
+            if(num == null) {
+                throw IllegalArgumentException("잘못된 입력값입니다.")
+            }
+            if (num < 0) {
+                throw IllegalArgumentException("음수는 허용되지 않습니다.")
+            }
+            nums.add(num)
         }
 
         return nums
