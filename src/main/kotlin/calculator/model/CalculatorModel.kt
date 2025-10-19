@@ -1,9 +1,11 @@
 package calculator.model
 
 class CalculatorModel {
-    fun calculate(input: String): Int{
-        if(input.isBlank()) return 0
-        var res=1
+    fun calculate(nums: List<Int>): Int {
+        var res = 0
+        for (num in nums) {
+            res += num
+        }
         return res
     }
 }
